@@ -1,42 +1,27 @@
 //Data Type
 //String, Number, Boolean, Null, undefine, symbol
 // Numbers : 10, 3,4, -2, -5, -7
-
-
-
 console.log('Hello world')
 console.log('10')
-
 console.log(true)
 console.log(false)
-
 console.log(null)
 console.log(undefined)
-
 console.log(3)
 console.log(3.1)
 console.log(9.1)
-
 // variable
-
 //var, let, const
-
 let firstName = 'Atikur'
 let lastName = 'Rahman'
 const space = ' '
 let fullName = firstName + space + lastName
-
-
 console.log(firstName)
 console.log(lastName)
 console.log(fullName)
-
-
 //numbers
-
 let numOne = 3
 let numTwo = 2
-
 // +, -,*, / % **
 let sum = numOne + numTwo
 let diff = numOne - numTwo
@@ -44,13 +29,10 @@ let mult = numOne * numTwo
 let dev = numOne / numTwo
 let remainder = numOne % numTwo
 let exp = numOne ** numTwo
-
 console.log('The sum:', sum)
 console.log('The diff:', diff)
 console.log('The sum of', numOne + ' the sum of', numTwo + 'is', sum)
-
 console.log('The sum of', numOne + ' the sum of', numTwo + 'is', sum)
-
 //Backtics
 console.log(`${numOne} + ${numTwo} = ${sum}`)
 console.log(`${numOne} - ${numTwo} = ${diff}`)
@@ -58,7 +40,6 @@ console.log(`${numOne} * ${numTwo} = ${mult}`)
 console.log(`${numOne} / ${numTwo} = ${dev}`)
 console.log(`${numOne} % ${numTwo} = ${remainder}`)
 console.log(`${numOne} ** ${numTwo} = ${exp}`)
-
 //Operators: Comparision operator: > < >= <= == === != !==
 // == equavalent, === exactly equavalent
 console.log(3 == '3') //True

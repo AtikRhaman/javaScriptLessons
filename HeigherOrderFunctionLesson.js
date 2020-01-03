@@ -13,17 +13,16 @@ const higherOrder = (m) => {
 
             const higherOrderFour = (p, q) => {
                 return m * n * o * p * q
-
             }
             return higherOrderFour
-
         }
         return higherOrderThree
-
     }
     return higherOrderTwo
 }
 console.log(higherOrder(2)(3)(4)(4, 5))
+
+
 //- for each with higherorder function
 
 // const numbers = [1, 2, 3, 4, 5]
@@ -36,15 +35,50 @@ console.log(higherOrder(2)(3)(4)(4, 5))
 //     const nerArr = []
 //     for (let i = 0; i<arr.length; i++){
 //     return
-        
+
 //     }
 // }
 
 
 // map, filtering, reduce, some, every, find
 //
+const products = [{
+        product: 'banana',
+        price: 3
+    },
+    {
+        product: 'mango',
+        price: 6
+    },
+    {
+        product: 'avocado',
+        price: 8
+    },
+    {
+        product: 'coffee',
+        price: 10
+    }, {
+        product: 'tea',
+        price: ""
+    }
+]
+const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
+const names = ['David', 'John', 'Atik', 'Helmi']
 
-let wholeNumbers = [1,2,3,4,5,6,7,8,9,10,11]
-const evenNumbers = wholeNumbers.filter(function(number)){
-    return wholeNumbers.
+//for each
+function callback(element, i) {
+    console.log(element)
 }
+countries.forEach(callback)
+
+//map
+function callback(item) {
+    return item
+}
+countries.map(callback)
+
+// find the sum of the price
+const prices = products.map((product) => product.price)
+console.log(prices)
+
+const printWithOutCleadnData = prices.filter (price)

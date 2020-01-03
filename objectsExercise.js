@@ -148,4 +148,59 @@ function displayDateTime() {
 console.log(displayDateTime())
 
 //Excercise Objects
-//1. Create an empty object called dog
+//Create an empty object called dog
+// Print the the dog object on the console
+// Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
+// Get name, legs, color, age and bark value from the dog object
+console.log('=========== emptyObject ===========')
+
+const dog = {
+    name: 'myDog',
+    legs: 4,
+    color: 'black',
+    bark: function () {
+        let dogSound = 'woof! woof!'
+        return dogSound
+    },
+    breed: {
+        child: 4,
+        colors: 'all black',
+    },
+    getDogInfo: function () {
+        dogInfo = `My dog name is ${dog.name}. He has ${dog.legs} legs. The color is ${dog.color} and he speaks ${dog.bark()}`
+        return dogInfo
+    }
+}
+console.log(dog.bark())
+console.log(dog.name)
+console.log(dog.legs)
+console.log(dog.color)
+console.log(dog.bark())
+console.log(dog.getDogInfo())
+
+//Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and the same for expenses.
+const personAccount = {
+    firstName: 'Md Atikur',
+    lastName: 'Rahman',
+    incomesPerMonth: 3000,
+    expensesPerMonth: 500,
+    totalIncome: function () {
+        let incomeFromSalary = 3000
+        let incomeFromFreelancing = 300
+        let totalIncomeperYear = `Approximate Income should be: ${incomeFromSalary*12 + incomeFromFreelancing*12}`
+        return totalIncomeperYear
+    },
+    totalExpenses: function () {
+        let houseRent = 300
+        let transport = 50
+        let food = 120
+        let enterTainment = 50
+        let homeExpenses = 2000
+        let totalExpensesperYear = `2020 fixed Expenses is: ${houseRent*12 + transport*12 + food*12 + enterTainment*12 + homeExpenses*12}`
+        return totalExpensesperYear
+    }
+}
+console.log(personAccount.totalIncome())
+console.log(personAccount.totalExpenses())
+
+// javaScript for kids
